@@ -1,0 +1,11 @@
+const Playlist = require('../models/playlist');
+
+module.exports = {
+    index
+}
+
+function index(req, res) {
+   // const query = req.query.filter ? {streamingService: req.query.filter} : {};
+    //const playlists = Playlist.find(query);
+    res.render('playlists/index', {filter});
+}
