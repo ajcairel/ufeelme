@@ -1,0 +1,27 @@
+<%- include('../partials/header') %>
+
+
+<h1><%= playlist.title %></h1>
+
+<h3><a href="<%= playlist.link %>" target="_blank"><%= playlist.link %></a></h3>
+
+
+<form id="add-review" method="POST" action="/playlists/<%= playlist._id %>">
+    <label>Review:</label>
+    <textarea name="content"></textarea>
+    <input type="submit" value="Add Review">
+  </form>
+
+  <table>
+      <thead>
+          <th>Review</th>
+      </thead>
+  </table>
+  <tbody>
+      <tr>
+          <td> playlist.review </td>
+      </tr>
+  </tbody>
+
+
+<%- include('../partials/footer') %>

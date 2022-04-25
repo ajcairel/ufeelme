@@ -5,8 +5,29 @@
 <h1><%= query %></h1>
 
 
-<a href="/playlists/new">Add Playlist</a>
+<a href="/playlists/new?filter=<%= query %>">Add Playlist</a>
 
+
+<table id="list">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Streaming Service</th>
+        <th>Link</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% playlists.forEach(function(p) { %>
+       <% if (p.streamingService === query) { %>
+        <tr>
+          <td><%= p.name %></td>
+          <td><%= p.streamingService %></td>
+          <td><a href="/playlists/<%= p._id %>" target="_blank"><%= p.link %></a></td>
+        </tr
+        <% } %>
+        <% }); %>
+      </tbody>
+    </table>
 
 
 

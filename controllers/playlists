@@ -2,41 +2,69 @@ const Playlist = require('../models/playlist');
 
 module.exports = {
     index,
+    show,
     new: newPlaylist,
-    //create
+    create
 }
 
-function index(req, res) {
-    // const query = req.query.filter ? {streamingService: req.query.filter} : {};
-    const query = req.query.filter;
-    const playlists = Playlist.find(query);
-    res.render('playlists/index', {query, playlists});
+// function index(req, res) {
+//     // const query = req.query.filter ? {streamingService: req.query.filter} : {};
+//     const query = req.query.filter;
+//     // const playlists = Playlist.find(query);
+//     const playlists = Playlist.find({});
+
+//     console.log('index loading');
+//     console.log('playlists' + playlists);
+//     res.render('playlists/index', {query, playlists});
+// }
+
+
+
+    async function index(req, res) {
+        // const query = req.query.filter ? {streamingService: req.query.filter} : {};
+        const query = req.query.filter;
+        // const playlists = Playlist.find(query);
+        const playlists = await Playlist.find({});
+    
+        console.log('index loading');
+        console.log('playlists' + playlists);
+        res.render('playlists/index', {query, playlists});
+    }
+
+        // async function index(req, res) {
+        //     const query = req.query.filter ? {streamingService: req.query.filter} : {};
+        //     const playlists = await Playlist.find(query);
+        //     res.render('playlists/index', {query, playlists});
+        // }
+    
+
+
+function show(req, res) {
+    Playlist.findById(req.params.id, function(err, playlist) {
+        res.render('playlists/show', {playlist});
+    })
+
 }
 
 function newPlaylist(req, res) {
     const service = req.query.filter;
-    res.render('playlists/new');
+    console.log('new loading');
+    res.render('playlists/new', {service});
 }
 
 
-// function create(req, res) {
+function create(req, res) {
+    var playlist = new Playlist(req.body);
+    playlist.save(function(err) {
+        // if(err) return res.redirect('/playlists/new');
+        if (err) return console.log('Error');
+        // if (err) return res.redirect('/playlists');
+        console.log("playlist");
+        res.redirect('/playlists');
+    });
 
-// }
+}
 
-// function create(req, res) {
-//     // convert nowShowing's checkbox of nothing or "on" to boolean
-//     req.body.nowShowing = !!req.body.nowShowing;
-//     for (let key in req.body) {
-//       if (req.body[key] === '') delete req.body[key];
-//     }
-//     var movie = new Movie(req.body);
-//     movie.save(function(err) {
-//       // one way to handle errors
-//       if (err) return res.redirect('/movies/new');
-//       console.log(movie);
-//       res.redirect(`/movies/${movie._id}`);
-//     });
-//   }
 
 
 

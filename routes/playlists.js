@@ -6,7 +6,8 @@ const playlistsCtrl = require('../controllers/playlists');
 
 router.get('/', playlistsCtrl.index);
 router.get('/new', playlistsCtrl.new);
-// router.post('/', playlistsCtrl.create);
+router.post('/', playlistsCtrl.create);
+router.get('/:id', playlistsCtrl.show);
 
 
 module.exports = router;
