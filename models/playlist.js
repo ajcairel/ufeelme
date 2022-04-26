@@ -26,7 +26,6 @@ const playlistSchema = new Schema({
         type: String,
         required: true,
         // This will make sure it is a url
-        match: /[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/i
     },
     reviews: [reviewSchema]
 });

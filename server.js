@@ -11,6 +11,7 @@ require('dotenv').config(); // Added
 require('./config/database'); // Added
 require('./config/passport'); // Added
 
+var homeRouter = require('./routes/home');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var playlistsRouter = require('./routes/playlists');
@@ -44,7 +45,7 @@ app.use(function(req, res, next) {
   next();
 });
 
-
+app.use('/home', homeRouter);
 app.use('/', indexRouter);
 app.use('/playlists', playlistsRouter);
 app.use('/users', usersRouter);

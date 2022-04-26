@@ -3,7 +3,14 @@
 
 <h1><%= playlist.title %></h1>
 
-<h3><a href="<%= playlist.link %>" target="_blank"><%= playlist.link %></a></h3>
+<div>
+    <%- playlist.link %>
+
+</div>
+
+
+
+
 
 <div class="container"> 
     <form id="add-review" method="POST" action="/playlists/<%= playlist._id %>/reviews">
