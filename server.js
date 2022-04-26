@@ -14,6 +14,7 @@ require('./config/passport'); // Added
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var playlistsRouter = require('./routes/playlists');
+var reviewsRouter = require('./routes/reviews');
 var app = express();
 
 // view engine setup
@@ -47,6 +48,8 @@ app.use(function(req, res, next) {
 app.use('/', indexRouter);
 app.use('/playlists', playlistsRouter);
 app.use('/users', usersRouter);
+// Mounting (look into it)
+app.use('/', reviewsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -6,7 +6,7 @@
 <h3><a href="<%= playlist.link %>" target="_blank"><%= playlist.link %></a></h3>
 
 
-<form id="add-review" method="POST" action="/playlists/<%= playlist._id %>">
+<form id="add-review" method="POST" action="/playlists/<%= playlist._id %>/reviews">
     <label>Review:</label>
     <textarea name="content"></textarea>
     <input type="submit" value="Add Review">
@@ -16,12 +16,22 @@
       <thead>
           <th>Review</th>
       </thead>
-  </table>
-  <tbody>
-      <tr>
-          <td> playlist.review </td>
-      </tr>
-  </tbody>
+      <tbody>
+          <% playlist.reviews.forEach(function(r) { %>
+            <tr>
+                <td> <%= r.createdAt.toLocaleDateString() %> </td>
+                <td> <%= r.content %> </td>
+                <% if (user && user._id.equals(r.user)) { %>
+                    <form action="/reviews/<%= r._id %>?_method=DELETE" method="POST">
+                        <button type="submit">X</button>
+                    </form>
+                    <% } %>
+            </tr>
+
+            <% }); %>
+        </tbody>
+    </table>
+
 
 
 <%- include('../partials/footer') %>

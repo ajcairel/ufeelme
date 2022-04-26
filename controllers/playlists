@@ -26,8 +26,8 @@ module.exports = {
         // const playlists = Playlist.find(query);
         const playlists = await Playlist.find({});
     
-        console.log('index loading');
-        console.log('playlists' + playlists);
+        // console.log('index loading');
+        // console.log('playlists' + playlists);
         res.render('playlists/index', {query, playlists});
     }
 
@@ -48,7 +48,7 @@ function show(req, res) {
 
 function newPlaylist(req, res) {
     const service = req.query.filter;
-    console.log('new loading');
+    // console.log('new loading');
     res.render('playlists/new', {service});
 }
 
@@ -59,7 +59,7 @@ function create(req, res) {
         // if(err) return res.redirect('/playlists/new');
         if (err) return console.log('Error');
         // if (err) return res.redirect('/playlists');
-        console.log("playlist");
+        // console.log("playlist");
         res.redirect('/playlists');
     });
 
