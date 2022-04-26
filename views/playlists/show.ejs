@@ -5,32 +5,37 @@
 
 <h3><a href="<%= playlist.link %>" target="_blank"><%= playlist.link %></a></h3>
 
+<div class="container"> 
+    <form id="add-review" method="POST" action="/playlists/<%= playlist._id %>/reviews">
+        <label>Review:</label>
+        <textarea name="content"></textarea>
+        <input type="submit" value="Add Review">
+      </form>
+    
+      <table>
+          <thead>
+              <th>Review</th>
+          </thead>
+          <tbody>
+              <% playlist.reviews.forEach(function(r) { %>
+                <tr>
+                    <td><img class="avatar" src="<%= r.userAvatar%>" alt="avatar"><%= r.userName %></td>
+                    <td> <%= r.createdAt.toLocaleDateString() %> </td>
+                    <td> <%= r.content %> </td>
+                    <td>
+                    <% if (user && user._id.equals(r.user)) { %>
+                        <form action="/reviews/<%= r._id %>?_method=DELETE" method="POST">
+                            <button type="submit">X</button>
+                        </form>
+                        <% } %>
+                    </td>
+                </tr>
+    
+                <% }); %>
+            </tbody>
+        </table>
 
-<form id="add-review" method="POST" action="/playlists/<%= playlist._id %>/reviews">
-    <label>Review:</label>
-    <textarea name="content"></textarea>
-    <input type="submit" value="Add Review">
-  </form>
-
-  <table>
-      <thead>
-          <th>Review</th>
-      </thead>
-      <tbody>
-          <% playlist.reviews.forEach(function(r) { %>
-            <tr>
-                <td> <%= r.createdAt.toLocaleDateString() %> </td>
-                <td> <%= r.content %> </td>
-                <% if (user && user._id.equals(r.user)) { %>
-                    <form action="/reviews/<%= r._id %>?_method=DELETE" method="POST">
-                        <button type="submit">X</button>
-                    </form>
-                    <% } %>
-            </tr>
-
-            <% }); %>
-        </tbody>
-    </table>
+</div>
 
 
 
