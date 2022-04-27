@@ -2,7 +2,25 @@ const Playlist = require('../models/playlist');
 
 module.exports = {
     create,
-    delete: deleteReview
+    delete: deleteReview,
+    update
+}
+
+function update(req, res) {
+    console.log(req.params.id);
+    Playlist.findOne({'reviews._id': req.params.id}, function(err, playlist) {
+        console.log(err);
+        
+        // handle rougue user
+        // if (!playlist) return res.redirect(`/playlists/${playlist._id}`);
+        const review = playlist.reviews.id(req.params.id);
+        console.log(review);
+        if (!review.user.equals(req.user._id)) return res.redirect(`/playlists/${playlist._id}`);
+        review.content = req.body.content;
+        playlist.save(function(err) {
+            res.redirect(`/playlists/${playlist._id}`);
+        });
+    });
 }
 
 function deleteReview(req, res, next) {
