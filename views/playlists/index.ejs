@@ -42,6 +42,11 @@
           <tr>
             <td><%= p.name %></td>
             <td><a href="/playlists/<%= p._id %>" target="_blank"><%= p.name %></a></td>
+            <td> <% if (user && user._id.equals(p.user)) { %>
+              <form action="/playlists/<%= p._id %>?_method=DELETE" method="POST">
+                <button type="submit">X</button>
+              </form>
+            <% } %></td>
           </tr
           <% } %>
           <% }); %>

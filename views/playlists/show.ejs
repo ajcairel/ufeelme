@@ -1,11 +1,11 @@
 <%- include('../partials/header') %>
 
 
-<h1><%= playlist.title %></h1>
+<h1>HELLO</h1>
+
 
 <div>
     <%- playlist.link %>
-
 </div>
 
 
@@ -13,15 +13,17 @@
 
 
 <div class="container"> 
+    <% if (user) { %>
     <form id="add-review" method="POST" action="/playlists/<%= playlist._id %>/reviews">
         <label>Review:</label>
         <textarea name="content"></textarea>
         <input type="submit" value="Add Review">
       </form>
+      <% } %>
     
       <table>
           <thead>
-              <th>Review</th>
+              <th>Reviews</th>
           </thead>
           <tbody>
               <% playlist.reviews.forEach(function(r) { %>

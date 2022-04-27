@@ -25,8 +25,11 @@ const playlistSchema = new Schema({
     link: {
         type: String,
         required: true,
-        // This will make sure it is a url
+        // match: /<iframe(.+)<\/iframe>/,
     },
+      
+        // This will make sure it is a url
+    user :{type: Schema.Types.ObjectId, ref: 'User', required: true},
     reviews: [reviewSchema]
 });
 
