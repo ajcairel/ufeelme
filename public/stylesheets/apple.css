@@ -3,8 +3,8 @@
 }
 
 body {
-	background-image: linear-gradient(to right top, #211830, #433874, #22eae0, #e60efe, #9d0ffd);
 	font-family: Montserrat, sans-serif;
+    background-image: linear-gradient(-45deg, #35C3F3 0%, #8b9fe8 20%, #e681d8 39%, #ffa9a4 76%, #FED2CE 100%);
 	
 	display: flex;
 	align-items: center;
@@ -79,5 +79,3 @@ a {
 .avatar {
 	border-radius: 50%;
 }
-
-

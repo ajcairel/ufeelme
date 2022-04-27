@@ -1,33 +1,55 @@
-<%- include('../partials/header') %>
 
-<h1>playlists</h1>
 
-<h1><%= query %></h1>
+    <% if (query === 'Spotify') { %>
+      <%- include('../partials/spotify') %>
+    
+    <% } else if (query === 'Apple') { %>
+      <%- include('../partials/apple') %>
+    
+    <% } else if (query === 'Sound') { %> 
+      <%- include('../partials/soundcloud') %>
+      <% } else { %>
+        <%- include('../partials/header') %>
+        <% } %>
+
+<% if (query === 'Spotify') { %>
+  <h1>SPOTIFY</h1>
+
+<% } else if (query === 'Apple') { %>
+  <h1>Apple Music</h1>
+
+<% } else if (query === 'Sound') { %> 
+    <h1>Soundcloud</h1>
+  <% } %>
+
 
 
 <a href="/playlists/new?filter=<%= query %>">Add Playlist</a>
 
+<div class="playlist-container">
 
-<table id="list">
-    <thead>
-      <tr>
-        <th>Title</th>
-        <th>Streaming Service</th>
-        <th>Link</th>
-      </tr>
-    </thead>
-    <tbody>
-      <% playlists.forEach(function(p) { %>
-       <% if (p.streamingService === query) { %>
-        <tr>
-          <td><%= p.name %></td>
-          <td><%= p.streamingService %></td>
-          <td><a href="/playlists/<%= p._id %>" target="_blank"><%= p.link %></a></td>
-        </tr
-        <% } %>
-        <% }); %>
-      </tbody>
-    </table>
+  <table id="list">
+      <thead>
+          <tr>
+            <th>Title</th>
+            <th>Link</th>
+          </tr>
+        </thead>
+      
+      <tbody>
+        <% playlists.forEach(function(p) { %>
+         <% if (p.streamingService === query) { %>
+          <tr>
+            <td><%= p.name %></td>
+            <td><a href="/playlists/<%= p._id %>" target="_blank"><%= p.name %></a></td>
+          </tr
+          <% } %>
+          <% }); %>
+        </tbody>
+      </table>
+</div>
+
+
 
 
 

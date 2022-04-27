@@ -25,10 +25,17 @@ module.exports = {
         const query = req.query.filter;
         // const playlists = Playlist.find(query);
         const playlists = await Playlist.find({});
+        if (query === 'Spotify') {
+            title = 'Spotify Playlists';
+        } else if (query === 'Apple') {
+            title = 'Apple Music Playlists';
+        } else if (query === 'Sound') {
+            title = 'Soundcloud Playlists';
+        }
     
         // console.log('index loading');
         // console.log('playlists' + playlists);
-        res.render('playlists/index', {query, playlists});
+        res.render('playlists/index', {title: title, query, playlists});
     }
 
         // async function index(req, res) {
@@ -41,7 +48,7 @@ module.exports = {
 
 function show(req, res) {
     Playlist.findById(req.params.id, function(err, playlist) {
-        res.render('playlists/show', {playlist});
+        res.render('playlists/show', {title: playlist.name, playlist});
     })
 
 }
@@ -49,7 +56,7 @@ function show(req, res) {
 function newPlaylist(req, res) {
     const service = req.query.filter;
     // console.log('new loading');
-    res.render('playlists/new', {service});
+    res.render('playlists/new', {title: `Add Playlist`, service});
 }
 
 
@@ -60,7 +67,8 @@ function create(req, res) {
         if (err) return console.log('Error');
         // if (err) return res.redirect('/playlists');
         // console.log("playlist");
-        res.redirect('/playlists');
+        // res.redirect('/playlists/');
+        res.redirect(`/playlists/${playlist.id}`);
     });
 
 }

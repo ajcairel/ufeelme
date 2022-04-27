@@ -1,5 +1,14 @@
 <%- include('../partials/header') %>
 <body>
+  <% if (service === 'Spotify') { %>
+    <h1>SPOTIFY</h1>
+
+  <% } else if (service === 'Apple') { %>
+    <h1>Apple Music</h1>
+  
+  <% } else if (service === 'Sound') { %> 
+      <h1>Soundcloud</h1>
+    <% } %>
     <div class="container" >   
     <form id="add-playlist" action="/playlists" method="POST">
         <label>Playlist Name:</label>

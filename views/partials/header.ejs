@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='/stylesheets/style.css' />
-    <title>U Feel Me?</title>
+    <title><%= title %></title>
   </head>
   <body>
     <div class="nav">
       <nav>
-          <a href="/">HOME PAGE</a>
+          <a href="/home">HOME PAGE</a>
           <% if (user) { %>
               <a href="/logout">LOG OUT</a>
             <% } else { %>

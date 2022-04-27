@@ -3,8 +3,9 @@
 }
 
 body {
-	background-image: linear-gradient(to right top, #211830, #433874, #22eae0, #e60efe, #9d0ffd);
 	font-family: Montserrat, sans-serif;
+    background-image: url('http://assets.stickpng.com/thumbs/58af04446c252499281ae91f.png');
+    background-repeat: repeat;
 	
 	display: flex;
 	align-items: center;
@@ -79,5 +80,3 @@ a {
 .avatar {
 	border-radius: 50%;
 }
-
-
