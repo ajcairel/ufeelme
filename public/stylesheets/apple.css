@@ -71,18 +71,61 @@ a {
 
 
 .container {
-    background-color: #231E39;
-    border-radius: 25px;
-    box-shadow: 10px 10px 15px rgb(0 0 0 / 35%);
-    color: #B3B8CD;
-    padding: 30px 0 0;
-    /* position: relative; */
-    width: 777px;
-    max-width: 100%;
-    text-align: center;
+	background-color: #231E39;
+	border-radius: 25px;
+	box-shadow: 10px 10px 15px rgba(0,0,0,0.35);
+	color: #B3B8CD;
+	padding: 30px 0 0;
+	position: relative;
+	width: 600px;
+	height: 200px;
+	max-width: 100%;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	/* margin: auto; */
+	display: flex;
 	
 }
 
+th {
+	
+	width: 800px;
+	
+}
+
+
+.review-table {
+	table-layout: fixed;
+	background-color: #231E39;
+	border-radius: 25px;
+	box-shadow: 10px 10px 15px rgba(0,0,0,0.35);
+	color: #B3B8CD;
+	padding: 30px 0 0;
+	position: relative;
+	height: 500px;
+	max-height: 500px;
+	width: 800px;
+	display: block;
+	overflow-y: scroll;
+	margin-bottom: 25px;
+}
+
+#pfp {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#date {
+	text-align: center;
+	
+}
+
+td {
+	text-align: center;
+}
 .avatar {
 	border-radius: 50%;
+	height: 75px;
+	width: 75px;
 }

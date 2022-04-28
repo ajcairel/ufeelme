@@ -16,26 +16,33 @@
     <% if (user) { %>
     <form id="add-review" method="POST" action="/playlists/<%= playlist._id %>/reviews">
         <label>Review:</label>
-        <textarea name="content"></textarea>
+        <input class="review"name="content"></input>
         <input type="submit" value="Add Review">
       </form>
-      <% } %>
+      <% } else { %>
+        <a href="/auth/google" class="login">LOG IN TO LEAVE A REVIEW&nbsp;<img src="https://i.imgur.com/FHjYyi0.png"></a>
+        <% } %>
 </div>
+<h1>Reviews</h1>
     
       <table class="review-table">
-         <caption>Playlist Reviews</caption>
-         <thead>Playlist Reviews</thead>
+         <thead>
+             <th>User</th>
+             <th>Date Created</th>
+             <th>Review</th>
+         </thead>
           <tbody>
               <% playlist.reviews.forEach(function(r) { %>
                 <tr>
-                    <td><img class="avatar" src="<%= r.userAvatar%>" alt="avatar"><%= r.userName %></td>
-                    <td> <%= r.createdAt.toLocaleDateString() %> </td>
+                    <td id="pfp"><img class="avatar" src="<%= r.userAvatar%>" alt="avatar"><%= r.userName %></td>
+                    <td id="date"> <%= r.createdAt.toLocaleDateString() %> </td>
                     <td> <%= r.content %> </td>
                     <td>
                     <% if (user && user._id.equals(r.user)) { %>
                         <form action="/reviews/<%= r._id %>?_method=DELETE" method="POST">
                             <button type="submit">X</button>
                         </form>
+                    <td>
                         <form action="/reviews/<%= r._id %>?_method=PUT" method="POST">
                             <input name="content" value="<%= r.content %>">
                             <button type="submit">EDIT COMMENT</button>
