@@ -1,26 +1,26 @@
-
-
-    <% if (query === 'Spotify') { %>
-      <%- include('../partials/spotify') %>
-    
-    <% } else if (query === 'Apple') { %>
-      <%- include('../partials/apple') %>
-    
-    <% } else if (query === 'Sound') { %> 
-      <%- include('../partials/soundcloud') %>
-      <% } else { %>
-        <%- include('../partials/header') %>
-        <% } %>
-
 <% if (query === 'Spotify') { %>
-  <h1>SPOTIFY</h1>
+  <%- include('../partials/spotify') %>
 
 <% } else if (query === 'Apple') { %>
-  <h1>Apple Music</h1>
+  <%- include('../partials/apple') %>
 
 <% } else if (query === 'Sound') { %> 
-    <h1>Soundcloud</h1>
-  <% } %>
+  <%- include('../partials/soundcloud') %>
+  <% } else { %>
+    <%- include('../partials/header') %>
+    <% } %>
+
+<% if (query === 'Spotify') { %>
+<h1>SPOTIFY</h1>
+<% } else if (query === 'Apple') { %>
+<h1>Apple Music</h1>
+<% } else if (query === 'Sound') { %> 
+<h1>Soundcloud</h1>
+<% } %>
+
+
+
+
 
 
 
@@ -38,12 +38,11 @@
       
       <tbody>
         <% playlists.forEach(function(p) { %>
-         <% if (p.streamingService === query) { %>
+         <% if (p.streamingService === stream) { %>
           <tr>
             <td><%= p.name %></td>
             <td><a href="/playlists/<%= p._id %>" target="_blank"><%= p.name %></a></td>
             <td> <% if (user && user._id.equals(p.user)) { %>
-              <form action="/reviews/<%= r._id %>?_method=DELETE" method="POST"></form>
               <form action="/playlists/<%= p._id %>?_method=DELETE" method="POST">
                 <button type="submit">X</button>
               </form>

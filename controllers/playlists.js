@@ -41,15 +41,18 @@ function deletePlaylist(req, res) {
         const playlists = await Playlist.find({});
         if (query === 'Spotify') {
             title = 'Spotify Playlists';
+            stream = 'Spotify';
         } else if (query === 'Apple') {
             title = 'Apple Music Playlists';
+            stream = 'Apple Music';
         } else if (query === 'Sound') {
             title = 'Soundcloud Playlists';
+            stream = 'Soundcloud';
         }
     
         // console.log('index loading');
         // console.log('playlists' + playlists);
-        res.render('playlists/index', {title: title, query, playlists});
+        res.render('playlists/index', {title: title, stream, query, playlists});
     }
 
         // async function index(req, res) {

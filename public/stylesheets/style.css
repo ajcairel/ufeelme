@@ -14,7 +14,7 @@ body {
 	
 }
 h1 {
-	color: #e60efe;
+	color: black;
 }
 
 a {
@@ -27,6 +27,7 @@ a {
 	text-transform: uppercase;
 	font-size: 20px;
 	font-weight: 700;
+	
 }
 
 .nav {
@@ -41,7 +42,7 @@ a {
 
 
 .login img {
-  width: 14px;;
+  width: 14px;
   object-fit: contain;
 }
 
@@ -60,16 +61,18 @@ a {
 	/* background-size: 100% 300px; */
 	background-position: center;
 	text-align: center;
+	border-radius: 15%;
 
 }
 .apple {
 	height: 300px;
-	width: 100%;
+	/* width: 100%; */
 	background-image: url('https://cutewallpaper.org/24/apple-music-icon-png/1826410612.jpg');
 	/* background-size: cover; */
 	background-size: 100% 300px;
 	background-position: center;
 	text-align: center;
+	border-radius: 15%;
 
 }
 .sound {
@@ -80,6 +83,7 @@ a {
 	/* background-size: cover; */
 	background-position: center;
 	text-align: center;
+	border-radius: 15%;
 
 }
 
@@ -105,9 +109,6 @@ a {
 
 }
 
-
-
-
 .container {
 	background-color: #231E39;
 	border-radius: 25px;
@@ -115,16 +116,32 @@ a {
 	color: #B3B8CD;
 	padding: 30px 0 0;
 	position: relative;
-	width: 750px;
-	height: 750px;
+	width: 600px;
+	height: 400px;
 	max-width: 100%;
 	text-align: center;
 	justify-content: center;
 	align-items: center;
-	margin: auto;
+	/* margin: auto; */
 	display: flex;
-	overflow: hidden;
 	
+}
+
+.review-table {
+	background-color: #231E39;
+	border-radius: 25px;
+	box-shadow: 10px 10px 15px rgba(0,0,0,0.35);
+	color: #B3B8CD;
+	padding: 30px 0 0;
+	position: relative;
+	width: 600px;
+	height: 400px;
+	max-width: 100%;
+	
+	/* margin: auto; */
+	/* display: flex; */
+
+
 }
 
 .avatar {
