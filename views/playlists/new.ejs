@@ -36,7 +36,20 @@
     </div>
 
     <div class="tutorial">
-      <img src="https://i.imgur.com/fcrrfLw.gif" alt="tutorial">
+
+      <% if (service === 'Spotify') { %>
+       <h1>spot</h1>
+      
+      <% } else if (service === 'Apple') { %>
+        <img src="https://media4.giphy.com/media/wdLhzHNIfXVAeFVFXz/giphy.gif" alt="tutorial">
+      
+      <% } else if (service === 'Sound') { %> 
+        <h1>sound</h1>
+        <% } else { %>
+          oopsie
+          <% } %>
+      
+     
     </div>
     
 </body>

@@ -19,8 +19,16 @@ a {
   color: #00B7FF;
 }
 
+.site {
+	position: absolute;
+	left: 14px;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 700;
+}
+
 .nav {
-	background-color: orange;
+	background-color: #46e97f;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
@@ -60,20 +68,15 @@ a {
 
 
 .container {
-	background-color: #231E39;
-	border-radius: 25px;
-	box-shadow: 10px 10px 15px rgba(0,0,0,0.35);
-	color: #B3B8CD;
-	padding: 30px 0 0;
-	position: relative;
-	width: 350px;
-	max-width: 100%;
-	text-align: center;
-	justify-content: center;
-	align-items: center;
-	margin: auto;
-	display: flex;
-	overflow: hidden;
+    background-color: #231E39;
+    border-radius: 25px;
+    box-shadow: 10px 10px 15px rgb(0 0 0 / 35%);
+    color: #B3B8CD;
+    padding: 30px 0 0;
+    /* position: relative; */
+    width: 777px;
+    max-width: 100%;
+    text-align: center;
 	
 }
 
