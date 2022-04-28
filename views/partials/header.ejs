@@ -10,7 +10,12 @@
   <body>
     <div class="nav">
       <nav>
-          <a href="/home">HOME PAGE</a>
+        <div class="site">U Feel Me?</div>
+          <a href="/home">Home</a>
+          <a href="/playlists?filter=Spotify">Spotify</a>
+            <a href="/playlists?filter=Apple">Apple</a>
+            <a href="/playlists?filter=Sound">Soundcloud</a>
+       
           <% if (user) { %>
               <a href="/logout">LOG OUT</a>
             <% } else { %>

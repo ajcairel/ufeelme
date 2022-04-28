@@ -7,10 +7,25 @@ body {
 	min-height: 100vh;
 	
 }
+
+
+
+
+
+.head {
+
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-size: 150px;
+  animation: fadeIn 5s;
+	animation-delay: 5s;
+	opacity: 0;
+	animation-fill-mode: forwards;
+}
 .login {
 	display: flex;
     justify-content: center;
-    margin-top: 50%;
+    margin-top: 25%;
 }
 
 .login a {
