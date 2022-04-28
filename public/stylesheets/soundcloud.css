@@ -20,7 +20,7 @@ a {
 }
 
 .nav {
-	background-color: #46e97f;
+	background-color: orange;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;

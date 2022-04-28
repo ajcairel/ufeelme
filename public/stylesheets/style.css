@@ -37,6 +37,45 @@ a {
   object-fit: contain;
 }
 
+.tabs {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: center;
+    margin: auto;
+}
+.spot {
+	height: 300px;
+	width: 100%;
+	background-image: url('https://c.tenor.com/iczjaEFdW20AAAAC/spotify-music.gif');
+	/* background-size: cover; */
+	background-size: 100% 300px;
+	background-position: center;
+	text-align: center;
+
+}
+.apple {
+	height: 300px;
+	width: 100%;
+	background-image: url('https://c.tenor.com/uE_iP7QhGv0AAAAC/apple-music-apple.gif');
+	/* background-size: cover; */
+	background-size: 100% 300px;
+	background-position: center;
+	text-align: center;
+
+}
+.sound {
+	height: 300px;
+	width: 100%;
+	background-image: url('https://i.gifer.com/95lB.gif');
+	background-size: 100% 300px;
+	/* background-size: cover; */
+	background-position: center;
+	text-align: center;
+
+}
+
+
 .playlist-container {
 	background-color: #231E39;
 	border-radius: 25px;

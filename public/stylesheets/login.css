@@ -1,60 +1,38 @@
+
 body {
-	background-image: url('https://thumbs.gfycat.com/AngelicSpicyBichonfrise-small.gif');
+	background-image: url('https://i.imgur.com/dFYWwTN.gif');
 	font-family: Montserrat, sans-serif;
     background-size: cover;
 	background-position: center;
-	
-
 	min-height: 100vh;
 	
 }
-
-.nav {
-	background-color: #46e97f;
+.login {
 	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	height: 35px;
-	width: 100%;
-	/* margin: auto; */
+    justify-content: center;
+    margin-top: 50%;
 }
 
-/* nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 34px;
-} */
-
-/* .login {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 34px;
-} */
-
-.login img {
-  width: 14px;;
-  object-fit: contain;
+.login a {
+	font-size: 50px;
+    border: 2px solid grey;
+    border-radius: 7px;
+    border-color: grey;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
 }
 
-.container {
-	background-color: #231E39;
-	border-radius: 25px;
-	box-shadow: 10px 10px 15px rgba(0,0,0,0.35);
-	color: #B3B8CD;
-	padding: 30px 0 0;
-	position: relative;
-	width: 350px;
-	max-width: 100%;
-	text-align: center;
-	justify-content: center;
-	align-items: center;
-	margin: auto;
-	display: flex;
-	overflow: hidden;
-}
+#faded {
+	animation: fadeIn 5s;
+	animation-delay: 5s;
+	opacity: 0;
+	animation-fill-mode: forwards;
+	
+  }
+  @keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+  }
 
-.avatar {
-	border-radius: 50%;
-}
+  
