@@ -34,7 +34,7 @@
         <% playlists.forEach(function(p) { %>
          <% if (p.streamingService === stream) { %>
           <tr>
-            <td><a href="/playlists/<%= p._id %>" target="_blank"><%= p.name %></a>
+            <td><a href="/playlists/<%= p._id %>"><%= p.name %></a>
              <% if (user && user._id.equals(p.user)) { %>
               <form action="/playlists/<%= p._id %>?_method=DELETE" method="POST">
                 <button id="add" type="submit">Delete Playlist</button>
