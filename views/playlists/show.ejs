@@ -31,7 +31,7 @@
       <table class="review-table">
          <thead>
              <th>Listener</th>
-             <th>Date Created</th>
+             <th>Date Posted</th>
              <th>Review</th>
          </thead>
           <tbody>
@@ -47,9 +47,9 @@
                         <form class="comment-container" action="/reviews/<%= r._id %>?_method=PUT" method="POST">
                             <input class="review" name="content" value="<%= r.content %>">
                             <button class="add" type="submit">Edit Review</button>
+                        </form>
                             <form class="comment-container" action="/reviews/<%= r._id %>?_method=DELETE" method="POST">
                                 <button class="add" type="submit">Delete</button>
-                            </form>
                           </form>
                         <% } %>
                     </td>
