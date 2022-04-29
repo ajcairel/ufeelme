@@ -41,11 +41,11 @@ a {
 	/* margin: auto; */
 }
 
-.login {
-	display: flex;
-    justify-content: center;
-    margin-top: 25%;
-}
+
+.login img {
+	width: 14px;;
+	object-fit: contain;
+  }
 
 
 .add {
