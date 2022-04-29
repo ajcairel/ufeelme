@@ -1,6 +1,6 @@
 <div align="center">
    <h1>:notes: U Feel Me? :notes:</h1>
-   <h3><a https://ufeelme.herokuapp.com/">Feel me here</a></h3>
+   <h3><a href="https://ufeelme.herokuapp.com/">Feel me here</a></h3>
    <h5>Alexander Cairel</h5>                             
    <a href="[github page]" target="_blank">
       <img src="https://img.shields.io/badge/-Portfolio:_user.github.io-darkgreen?style=flat&logo=medium"/>
@@ -52,7 +52,7 @@
 
 ## :computer: Technologies Used
 
-[MongoDB](https://img.shields.io/badge/-MongoDB-333?style=flat&logo=mongodb)
+![MongoDB](https://img.shields.io/badge/-MongoDB-333?style=flat&logo=mongodb)
 ![Express](https://img.shields.io/badge/-Express-333?style=flat&logo=express) 
 ![Node](https://img.shields.io/badge/-Node.js-333?style=flat&logo=node.js)
 ![Mongoose ODM](https://img.shields.io/badge/-Mongoose_ODM-333?style=flat&logo=mongodb)
@@ -73,7 +73,7 @@
 <summary>How to Use</summary>
 <ol>
 <li>You must be logged in to add a playlist and leave a review.</li>
-<li>You can listen without logging in, just go <a https://ufeelme.herokuapp.com/home">here</a></li>
+<li>You can listen without logging in, just go <a href="https://ufeelme.herokuapp.com/home">here</a></li>
 </ol>
 </details>
 
