@@ -220,6 +220,12 @@ th {
 	margin-bottom: 25px;
 }
 
+.comment-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #pfp {
 	display: flex;
 	flex-direction: column;

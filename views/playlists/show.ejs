@@ -40,15 +40,16 @@
                     <td id="pfp"><img class="avatar" src="<%= r.userAvatar%>" alt="avatar"><%= r.userName %></td>
                     <td id="date"> <%= r.createdAt.toLocaleDateString() %> </td>
                     <td class="review-text"> <%= r.content %> </td>
-                    <td>
+                    <td >
                     <% if (user && user._id.equals(r.user)) { %>
-                        <form action="/reviews/<%= r._id %>?_method=DELETE" method="POST">
-                            <button type="submit">X</button>
-                        </form>
-                    <td>
-                        <form action="/reviews/<%= r._id %>?_method=PUT" method="POST">
-                            <input name="content" value="<%= r.content %>">
-                            <button type="submit">EDIT COMMENT</button>
+                       
+                    
+                        <form class="comment-container" action="/reviews/<%= r._id %>?_method=PUT" method="POST">
+                            <input class="review" name="content" value="<%= r.content %>">
+                            <button class="add" type="submit">Edit Review</button>
+                            <form class="comment-container" action="/reviews/<%= r._id %>?_method=DELETE" method="POST">
+                                <button class="add" type="submit">Delete</button>
+                            </form>
                           </form>
                         <% } %>
                     </td>
@@ -57,6 +58,8 @@
                 <% }); %>
             </tbody>
         </table>
+
+     
 
 
 
