@@ -1,5 +1,7 @@
 * {
 	box-sizing: border-box;
+	font-family: 'Dancing Script', cursive;
+	text-decoration: none;
 }
 
 body {
@@ -28,7 +30,8 @@ a {
 }
 
 .nav {
-	background-image: linear-gradient(-45deg, #35C3F3 0%, #8b9fe8 20%, #e681d8 39%, #ffa9a4 76%, #FED2CE 100%);
+	/* background-image: linear-gradient(-45deg, #35C3F3 0%, #8b9fe8 20%, #e681d8 39%, #ffa9a4 76%, #FED2CE 100%); */
+	background-color: whitesmoke;
 	display: flex;
 
 	justify-content: flex-end;
@@ -38,10 +41,44 @@ a {
 	/* margin: auto; */
 }
 
-a {
-	text-decoration: none;
-	background-image: linear-gradient(-45deg, #35C3F3 0%, #8b9fe8 20%, #e681d8 39%, #ffa9a4 76%, #FED2CE 100%);
-	
+.login {
+	display: flex;
+    justify-content: center;
+    margin-top: 25%;
+}
+
+
+.add {
+	height: 35px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* font-size: 50px; */
+  font-family: 'Dancing Script', cursive;
+    border: 2px solid grey;
+    border-radius: 7px;
+    border-color: grey;
+    color: white;
+    background-image: url('https://c.tenor.com/WzXfobzzVDIAAAAC/sound-waves-cool-to-watch.gif');
+    background-size: cover;
+    text-decoration: none;
+    padding: 10px;
+}
+#add {
+	height: 35px;
+	/* display: flex; */
+	align-items: center;
+	justify-content: center;
+	/* font-size: 50px; */
+  font-family: 'Dancing Script', cursive;
+    border: 2px solid grey;
+    border-radius: 7px;
+    border-color: grey;
+    color: white;
+    background-image: url('https://c.tenor.com/WzXfobzzVDIAAAAC/sound-waves-cool-to-watch.gif');
+    background-size: cover;
+    text-decoration: none;
+    padding: 6px;
 }
 
 
@@ -67,8 +104,23 @@ a {
     /* margin-left: auto; */
     /* margin-right: auto; */
     display: grid;
-    grid-template-columns: 50%;
+	/* display: flex; */
+    /* grid-template-columns: 50%; */
     justify-content: center;
+
+	table-layout: fixed;
+	background-color: #231E39;
+	border-radius: 25px;
+	box-shadow: 10px 10px 15px rgba(0,0,0,0.35);
+	color: #B3B8CD;
+	padding: 30px 0 0;
+	position: relative;
+	height: 500px;
+	max-height: 500px;
+	width: 300px;
+	display: block;
+	overflow-y: scroll;
+	margin-bottom: 25px;
 	
 
 }
@@ -82,20 +134,14 @@ a {
 
 .container {
 	background-color: #231E39;
-	border-radius: 25px;
-	box-shadow: 10px 10px 15px rgba(0,0,0,0.35);
-	color: #B3B8CD;
-	padding: 30px 0 0;
-	position: relative;
-	width: 600px;
-	height: 200px;
-	max-width: 100%;
-	text-align: center;
-	justify-content: center;
-	align-items: center;
-	/* margin: auto; */
-	display: flex;
-	
+    border-radius: 25px;
+    box-shadow: 10px 10px 15px rgb(0 0 0 / 35%);
+    color: #B3B8CD;
+    padding: 30px 0 0;
+    /* position: relative; */
+    width: 777px;
+    max-width: 100%;
+    text-align: center;
 }
 
 th {
@@ -139,3 +185,5 @@ td {
 	height: 75px;
 	width: 75px;
 }
+
+

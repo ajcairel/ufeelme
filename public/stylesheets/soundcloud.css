@@ -1,10 +1,13 @@
 * {
 	box-sizing: border-box;
+	font-family: 'Dancing Script', cursive;
+	text-decoration: none;
+
 }
 
 body {
 	font-family: Montserrat, sans-serif;
-    background-image: url('http://assets.stickpng.com/images/580b57fcd9996e24bc43c537.png');
+    background-image: url('https://journalists.org/wp-content/uploads/2020/01/soundcloud-logo.png');
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -67,6 +70,20 @@ a {
     grid-template-columns: 50%;
     justify-content: center;
 
+	table-layout: fixed;
+	background-color: #231E39;
+	border-radius: 25px;
+	box-shadow: 10px 10px 15px rgba(0,0,0,0.35);
+	color: #B3B8CD;
+	padding: 30px 0 0;
+	position: relative;
+	height: 500px;
+	max-height: 500px;
+	width: 300px;
+	display: block;
+	overflow-y: scroll;
+	margin-bottom: 25px;
+
 }
 
 
@@ -74,19 +91,14 @@ a {
 
 .container {
 	background-color: #231E39;
-	border-radius: 25px;
-	box-shadow: 10px 10px 15px rgba(0,0,0,0.35);
-	color: #B3B8CD;
-	padding: 30px 0 0;
-	position: relative;
-	width: 600px;
-	height: 200px;
-	max-width: 100%;
-	text-align: center;
-	justify-content: center;
-	align-items: center;
-	/* margin: auto; */
-	display: flex;
+    border-radius: 25px;
+    box-shadow: 10px 10px 15px rgb(0 0 0 / 35%);
+    color: #B3B8CD;
+    padding: 30px 0 0;
+    /* position: relative; */
+    width: 777px;
+    max-width: 100%;
+    text-align: center;
 	
 }
 
@@ -94,6 +106,41 @@ th {
 	
 	width: 800px;
 	
+}
+
+.add {
+	height: 35px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* font-size: 50px; */
+  font-family: 'Dancing Script', cursive;
+    border: 2px solid grey;
+    border-radius: 7px;
+    border-color: grey;
+    color: white;
+    background-image: url('https://c.tenor.com/WzXfobzzVDIAAAAC/sound-waves-cool-to-watch.gif');
+    background-size: cover;
+    text-decoration: none;
+    padding: 10px;
+
+}
+
+#add {
+	height: 35px;
+	/* display: flex; */
+	align-items: center;
+	justify-content: center;
+	/* font-size: 50px; */
+  font-family: 'Dancing Script', cursive;
+    border: 2px solid grey;
+    border-radius: 7px;
+    border-color: grey;
+    color: white;
+    background-image: url('https://c.tenor.com/WzXfobzzVDIAAAAC/sound-waves-cool-to-watch.gif');
+    background-size: cover;
+    text-decoration: none;
+    padding: 6px;
 }
 
 

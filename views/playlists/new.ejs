@@ -31,20 +31,22 @@
         <input type="text" name="streamingService" value="<%= stream %>" readonly></input>
         <label>Link</label>
         <input type="text" name="link" required pattern="<iframe(.+)<\/iframe>">
-        <input type="submit" value="add-playlist">
+        <input type="submit" value="add-playlist" id="add">
       </form>
     </div>
+
+    <h1 class="direction">Here's how to get the embedded link</h1>
 
     <div class="tutorial">
 
       <% if (service === 'Spotify') { %>
-      <img class="embed" src="https://media4.giphy.com/media/3Pdi2E0K0HAfIR7cv5/200.webp" alt="tutorial">
+      <img class="embed" src="https://media1.giphy.com/media/6mq9ao1CPcZrxPBdjv/giphy.gif" alt="tutorial">
       
       <% } else if (service === 'Apple') { %>
-        <img class="embed" src="https://media4.giphy.com/media/wdLhzHNIfXVAeFVFXz/giphy.gif" alt="tutorial">
+        <img class="embed" src="https://media3.giphy.com/media/oOpz4G5cYRFEvZc75w/giphy.gif" alt="tutorial">
       
       <% } else if (service === 'Sound') { %> 
-       <img class="embed" src="https://media4.giphy.com/media/nvWrtgLMuL4fvM6m86/giphy.gif" alt="tutorial">
+       <img class="embed" src="https://media1.giphy.com/media/BvXMl4gDbyWQj1Jd0S/giphy.gif" alt="tutorial">
         <% } else { %>
           oopsie
           <% } %>

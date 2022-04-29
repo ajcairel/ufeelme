@@ -1,7 +1,7 @@
 <%- include('../partials/header') %>
 
 
-<h1><%- playlist.name %> </h1>
+<h1 id="rainbow-text"><%- playlist.name %> </h1>
 
 
 <div>
@@ -16,9 +16,9 @@
     <% if (user) { %>
         <form id="add-review" method="POST" action="/playlists/<%= playlist._id %>/reviews">
             <div class="review-content">
-                <label>Review:</label>
+                <label>Review-</label>
                 <input class="review"name="content"></input>
-                <input type="submit" value="Add Review">
+                <input type="submit" value="Add Review" class="add">
             </div>
           </form>
           <% } else { %>
@@ -26,11 +26,11 @@
             <% } %>
 
 </div>
-<h1>Reviews</h1>
+<h1 id="rainbow-text">Reviews</h1>
     
       <table class="review-table">
          <thead>
-             <th>User</th>
+             <th>Listener</th>
              <th>Date Created</th>
              <th>Review</th>
          </thead>
@@ -39,7 +39,7 @@
                 <tr>
                     <td id="pfp"><img class="avatar" src="<%= r.userAvatar%>" alt="avatar"><%= r.userName %></td>
                     <td id="date"> <%= r.createdAt.toLocaleDateString() %> </td>
-                    <td> <%= r.content %> </td>
+                    <td class="review-text"> <%= r.content %> </td>
                     <td>
                     <% if (user && user._id.equals(r.user)) { %>
                         <form action="/reviews/<%= r._id %>?_method=DELETE" method="POST">

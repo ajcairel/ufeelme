@@ -20,19 +20,13 @@
 
 
 
-
-
-
-
-
-
 <div class="playlist-container">
-
+ <h3>Click A Playlist To Listen!</h3>
   <table id="list">
       <thead>
           <tr>
-            <th>Title</th>
-            <th>Link</th>
+            <th></th>
+            
           </tr>
         </thead>
       
@@ -40,20 +34,20 @@
         <% playlists.forEach(function(p) { %>
          <% if (p.streamingService === stream) { %>
           <tr>
-            <td><%= p.name %></td>
-            <td><a href="/playlists/<%= p._id %>" target="_blank"><%= p.name %></a></td>
-            <td> <% if (user && user._id.equals(p.user)) { %>
+            <td><a href="/playlists/<%= p._id %>" target="_blank"><%= p.name %></a>
+             <% if (user && user._id.equals(p.user)) { %>
               <form action="/playlists/<%= p._id %>?_method=DELETE" method="POST">
-                <button type="submit">X</button>
+                <button id="add" type="submit">Delete Playlist</button>
               </form>
             <% } %></td>
           </tr
           <% } %>
           <% }); %>
-          <tr><a href="/playlists/new?filter=<%= query %>">Add Playlist</a></tr>
+         
         </tbody>
       </table>
 </div>
+<a class="add" href="/playlists/new?filter=<%= query %>">Add Playlist</a>
 
 
 
