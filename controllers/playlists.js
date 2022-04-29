@@ -64,8 +64,9 @@ function deletePlaylist(req, res) {
 
 
 function show(req, res) {
+    let hasComment = false;
     Playlist.findById(req.params.id, function(err, playlist) {
-        res.render('playlists/show', {title: playlist.name, playlist});
+        res.render('playlists/show', {title: playlist.name, playlist, hasComment});
     })
 
 }

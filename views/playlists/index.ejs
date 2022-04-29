@@ -11,11 +11,11 @@
     <% } %>
 
 <% if (query === 'Spotify') { %>
-<h1>SPOTIFY</h1>
+<h1>Spotify Playlists</h1>
 <% } else if (query === 'Apple') { %>
-<h1>Apple Music</h1>
+<h1>Apple Music Playlists</h1>
 <% } else if (query === 'Sound') { %> 
-<h1>Soundcloud</h1>
+<h1>Soundcloud Playlists</h1>
 <% } %>
 
 
@@ -24,7 +24,7 @@
 
 
 
-<a href="/playlists/new?filter=<%= query %>">Add Playlist</a>
+
 
 <div class="playlist-container">
 
@@ -50,10 +50,10 @@
           </tr
           <% } %>
           <% }); %>
+          <tr><a href="/playlists/new?filter=<%= query %>">Add Playlist</a></tr>
         </tbody>
       </table>
 </div>
-
 
 
 

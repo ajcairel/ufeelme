@@ -4,7 +4,7 @@
 
 body {
 	font-family: Montserrat, sans-serif;
-	background-image: url('https://www.freepnglogos.com/uploads/spotify-logo-png/file-spotify-logo-png-4.png');
+	background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Spotify_App_Logo.svg/1024px-Spotify_App_Logo.svg.png');
 	/* background-color: green; */
 	background-position: center;
 	background-size: cover;
@@ -16,12 +16,17 @@ body {
 	
 }
 
+h1 {
+	
+	color: #1DB954;
+}
+
 a {
   color: #00B7FF;
 }
 
 .site {
-	color: green;
+	color: #1DB954;
 	position: absolute;
 	left: 14px;
 	text-transform: uppercase;
@@ -48,23 +53,28 @@ a {
 
 .playlist-container {
 	background-color: #231E39;
-	border-radius: 25px;
-	box-shadow: 10px 10px 15px rgba(0,0,0,0.35);
-	color: #B3B8CD;
-	padding: 30px 0 0;
-	position: relative;
-	width: 75%;
-	height: 750px;
-	max-width: 100%;
-	text-align: center;
-	margin: 20px 0;
-	overflow: hidden;
-	margin-left: auto;
-	margin-right: auto;
-	display: grid;
-	grid-template-columns: 50%;
-	justify-content: center;
+    border-radius: 25px;
+    box-shadow: 10px 10px 15px rgb(0 0 0 / 35%);
+    color: #B3B8CD;
+    padding: 30px 0 0;
+    /* position: relative; */
+    /* width: 75%; */
+    height: 500px;
+    /* max-width: 100%; */
+    width: 300px;
+    text-align: center;
+    margin: 20px 0;
+    /* overflow: hidden; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    display: grid;
+    grid-template-columns: 50%;
+    justify-content: center;
 
+}
+
+.embed {
+	height: 500px;;
 }
 
 

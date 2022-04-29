@@ -14,14 +14,17 @@
 
 <div class="container"> 
     <% if (user) { %>
-    <form id="add-review" method="POST" action="/playlists/<%= playlist._id %>/reviews">
-        <label>Review:</label>
-        <input class="review"name="content"></input>
-        <input type="submit" value="Add Review">
-      </form>
-      <% } else { %>
-        <a href="/auth/google" class="login">LOG IN TO LEAVE A REVIEW&nbsp;<img src="https://i.imgur.com/FHjYyi0.png"></a>
-        <% } %>
+        <form id="add-review" method="POST" action="/playlists/<%= playlist._id %>/reviews">
+            <div class="review-content">
+                <label>Review:</label>
+                <input class="review"name="content"></input>
+                <input type="submit" value="Add Review">
+            </div>
+          </form>
+          <% } else { %>
+            <a href="/auth/google" class="login">LOG IN TO LEAVE A REVIEW&nbsp;<img src="https://i.imgur.com/FHjYyi0.png"></a>
+            <% } %>
+
 </div>
 <h1>Reviews</h1>
     
