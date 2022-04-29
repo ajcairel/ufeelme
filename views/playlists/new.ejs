@@ -27,9 +27,9 @@
     <form id="add-playlist" action="/playlists" method="POST">
         <label>Playlist Name:</label>
         <input type="text" name="name">
-        <label>Streaming Service</label>
+        <label>Service:</label>
         <input type="text" name="streamingService" value="<%= stream %>" readonly></input>
-        <label>Link</label>
+        <label>Embedded Link:</label>
         <input type="text" name="link" required pattern="<iframe(.+)">
         <input type="submit" value="Add Playlist" id="add">
       </form>
