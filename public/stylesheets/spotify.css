@@ -6,8 +6,9 @@
 
 body {
 	font-family: Montserrat, sans-serif;
-	background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Spotify_App_Logo.svg/1024px-Spotify_App_Logo.svg.png');
+	/* background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Spotify_App_Logo.svg/1024px-Spotify_App_Logo.svg.png'); */
 	/* background-color: green; */
+	background-image: url('https://www.freepnglogos.com/uploads/spotify-logo-png/file-spotify-logo-png-4.png');
 	background-position: center;
 	background-size: cover;
 	display: flex;
@@ -20,7 +21,7 @@ body {
 
 h1 {
 	
-	color: #1DB954;
+	color: black;
 }
 
 a {
