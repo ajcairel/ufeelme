@@ -33,7 +33,7 @@
 | Description | Screenshot |
 |------------ | ------------|
 | <h3 align="center">Landing Page</h3> | <img src="https://i.imgur.com/5Mhqyne.png" width="700"/> |
-| <h3 align="center">Home Page</h3> | <img src="https://i.imgur.com/WcGHexZ.png" width="700"/> |
+| <h3 align="center">Home Page</h3> | <img src="https://i.imgur.com/XRKwxVU.png" width="700"/> |
 | <h3 align="center">Spotify Playlists Page</h3> | <img src="https://i.imgur.com/vQUoM5x.png" width="700"/> |
 | <h3 align="center">Apple Music Playlists Page (User Can Delete Own Playlist)</h3> | <img src="https://i.imgur.com/sEmjhFW.png" width="700"/> |
 | <h3 align="center">Soundcloud Playlists Page</h3> | <img src="https://i.imgur.com/clK6afJ.png" width="700"/> |
