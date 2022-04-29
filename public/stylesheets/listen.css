@@ -1,0 +1,314 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Dancing Script', cursive;
+	text-decoration: none;
+}
+
+body {
+	background-image: url('https://wallpaperaccess.com/full/513809.jpg');
+	font-family: Montserrat, sans-serif;
+	background-size: cover;
+    background-position: center;
+
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0;
+    
+	
+}
+
+.background-img {
+    margin: 0;
+}
+h1 {
+
+	font-size: 50px;
+	
+  }
+
+  .selection {
+	  font-size: 80px;
+  }
+.head {
+	text-align: center;
+	font-family: 'Dancing Script', cursive;
+	font-size: 100px;
+	
+  }
+
+ 
+
+a {
+  color: #00B7FF;
+}
+
+.site {
+	position: absolute;
+	left: 14px;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 700;
+	
+}
+
+.nav {
+	background-color: #333;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 35px;
+	width: 100%;
+	/* margin: auto; */
+}
+
+.add {
+	height: 35px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* font-size: 50px; */
+  font-family: 'Dancing Script', cursive;
+    border: 2px solid grey;
+    border-radius: 7px;
+    border-color: grey;
+    color: white;
+    background-image: url('https://c.tenor.com/WzXfobzzVDIAAAAC/sound-waves-cool-to-watch.gif');
+    background-size: cover;
+    text-decoration: none;
+    padding: 8px;
+
+}
+
+
+.login img {
+  width: 14px;
+  object-fit: contain;
+}
+
+.tabs {
+	display: flex;
+	flex-direction: row;
+	/* width: 100%; */
+	/* justify-content: center; */
+	justify-content: space-evenly;
+	width: 100%;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    /* margin: auto; */
+}
+.spot {
+	height: 300px;
+	width: 300px;
+	background-image: url('https://thewebinarvet-wordpress.s3.amazonaws.com/uploads/2020/02/spotify-logo.png');
+	/* background-size: cover; */
+	/* background-size: 100% 300px; */
+	background-position: center;
+	text-align: center;
+	border-radius: 15%;
+
+}
+
+
+.apple {
+	height: 300px;
+	width: 300px;
+	background-image: url('https://cutewallpaper.org/24/apple-music-icon-png/1826410612.jpg');
+	/* background-size: cover; */
+	background-size: 100% 300px;
+	background-position: center;
+	text-align: center;
+	border-radius: 15%;
+
+}
+.sound {
+	height: 300px;
+	background-image: url('https://iconarchive.com/download/i54067/danleech/simple/soundcloud.ico');
+	background-size: 100% 300px;
+	/* background-size: cover; */
+	background-position: center;
+	text-align: center;
+	border-radius: 15%;
+
+}
+
+
+.playlist-container {
+	background-color: #231E39;
+	border-radius: 25px;
+	box-shadow: 10px 10px 15px rgba(0,0,0,0.35);
+	color: #B3B8CD;
+	padding: 30px 0 0;
+	position: relative;
+	width: 75%;
+	height: 750px;
+	max-width: 100%;
+	text-align: center;
+	margin: 20px 0;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+	display: grid;
+	grid-template-columns: 50%;
+	justify-content: center;
+
+}
+
+.container {
+	background-color: #231E39;
+	border-radius: 25px;
+	box-shadow: 10px 10px 15px rgba(0,0,0,0.35);
+	color: #B3B8CD;
+	padding: 30px 0 0;
+	position: relative;
+	width: 500px;
+	height: 100px;
+	max-width: 100%;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	/* margin: auto; */
+	display: flex;
+	
+}
+
+th {
+	
+	width: 800px;
+	
+}
+
+.review {
+	font-family: 'Roboto', sans-serif;
+  color: #333;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid;
+  width: 231px;
+  height: 20px;
+}
+
+.review-text {
+	font-family: 'Roboto', sans-serif;
+}
+
+.review-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 24px;
+}
+
+
+.review-table {
+	table-layout: fixed;
+	background-color: #231E39;
+	border-radius: 25px;
+	box-shadow: 10px 10px 15px rgba(0,0,0,0.35);
+	color: #B3B8CD;
+	padding: 30px 0 0;
+	position: relative;
+	height: 300px;
+	max-height: 300px;
+	width: 800px;
+	display: block;
+	overflow-y: scroll;
+	margin-bottom: 25px;
+}
+
+#pfp {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#date {
+	text-align: center;
+	
+}
+
+td {
+	text-align: center;
+}
+.avatar {
+	border-radius: 50%;
+	height: 75px;
+	width: 75px;
+}
+
+#rainbow-text {
+	/* Create a conic gradient. */
+	/* Double percentages to avoid blur (#000 10%, #fff 10%, #fff 20%, ...). */
+	background: #CA4246;
+	background-color: #CA4246;
+	background: conic-gradient(
+	  #CA4246 16.666%, 
+	  #E16541 16.666%, 
+	  #E16541 33.333%, 
+	  #F18F43 33.333%, 
+	  #F18F43 50%, 
+	  #8B9862 50%, 
+	  #8B9862 66.666%, 
+	  #476098 66.666%, 
+	  #476098 83.333%, 
+	  #A7489B 83.333%);
+	
+	/* Set thee background size and repeat properties. */
+	background-size: 57%;
+	background-repeat: repeat;
+	
+	/* Use the text as a mask for the background. */
+	/* This will show the gradient as a text color rather than element bg. */
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+	
+	/* Animate the text when loading the element. */
+	/* This animates it on page load and when hovering out. */
+	animation: rainbow-text-animation-rev 0.5s ease forwards;
+  
+	cursor: pointer;
+  }
+  
+  /* Add animation on hover. */
+  #rainbow-text:hover {
+	animation: rainbow-text-animation 0.5s ease forwards;
+  }
+  
+  /* Move the background and make it larger. */
+  /* Animation shown when hovering over the text. */
+  @keyframes rainbow-text-animation {
+	0% {
+	  background-size: 57%;
+	  background-position: 0 0;
+	}
+	20% {
+	  background-size: 57%;
+	  background-position: 0 1em;
+	}
+	100% {
+	  background-size: 300%;
+	  background-position: -9em 1em;
+	}
+  }
+  
+  /* Move the background and make it smaller. */
+  /* Animation shown when entering the page and after the hover animation. */
+  @keyframes rainbow-text-animation-rev {
+	0% {
+	  background-size: 300%;
+	  background-position: -9em 1em;
+	}
+	20% {
+	  background-size: 57%;
+	  background-position: 0 1em;
+	}
+	100% {
+	  background-size: 57%;
+	  background-position: 0 0;
+	}
+
+  }
+
