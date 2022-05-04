@@ -1,168 +1,143 @@
 * {
-	box-sizing: border-box;
-	font-family: 'Dancing Script', cursive;
-	text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Dancing Script", cursive;
+  text-decoration: none;
 }
 
 body {
-	font-family: Montserrat, sans-serif;
-	/* background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Spotify_App_Logo.svg/1024px-Spotify_App_Logo.svg.png'); */
-	/* background-color: green; */
-	background-image: url('https://www.freepnglogos.com/uploads/spotify-logo-png/file-spotify-logo-png-4.png');
-	background-position: center;
-	background-size: cover;
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	min-height: 100vh;
-	margin: 0;
-	
+  font-family: Montserrat, sans-serif;
+
+  background-image: url("https://www.freepnglogos.com/uploads/spotify-logo-png/file-spotify-logo-png-4.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
 }
 
 h1 {
-	
-	color: black;
+  color: black;
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
 }
 
 .site {
-	color: #1DB954;
-	position: absolute;
-	left: 14px;
-	text-transform: uppercase;
-	font-size: 20px;
-	font-weight: 700;
-	
+  color: #1db954;
+  position: absolute;
+  left: 14px;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .nav {
-	background-color: black;
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	height: 35px;
-	width: 100%;
-	/* margin: auto; */
+  background-color: black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 35px;
+  width: 100%;
 }
 
-
 .login img {
-  width: 14px;;
+  width: 14px;
   object-fit: contain;
 }
 
 .playlist-container {
-	background-color: #231E39;
-    border-radius: 25px;
-    box-shadow: 10px 10px 15px rgb(0 0 0 / 35%);
-    color: #B3B8CD;
-    padding: 30px 0 0;
-    /* position: relative; */
-    /* width: 75%; */
-    height: 500px;
-    /* max-width: 100%; */
-    width: 300px;
-    text-align: center;
-    margin: 20px 0;
-    /* overflow: hidden; */
-    /* margin-left: auto; */
-    /* margin-right: auto; */
-    display: grid;
-	/* display: flex; */
-    /* grid-template-columns: 50%; */
-    justify-content: center;
-	
+  background-color: #231e39;
+  border-radius: 25px;
+  box-shadow: 10px 10px 15px rgb(0 0 0 / 35%);
+  color: #b3b8cd;
+  padding: 30px 0 0;
 
-	table-layout: fixed;
-	background-color: #231E39;
-	border-radius: 25px;
-	box-shadow: 10px 10px 15px rgba(0,0,0,0.35);
-	color: #B3B8CD;
-	padding: 30px 0 0;
-	position: relative;
-	height: 500px;
-	max-height: 500px;
-	width: 300px;
-	display: block;
-	overflow-y: scroll;
-	margin-bottom: 25px;
-	
+  height: 500px;
 
+  width: 300px;
+  text-align: center;
+  margin: 20px 0;
 
-	
+  display: grid;
 
+  justify-content: center;
+
+  table-layout: fixed;
+  background-color: #231e39;
+  border-radius: 25px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.35);
+  color: #b3b8cd;
+  padding: 30px 0 0;
+  position: relative;
+  height: 500px;
+  max-height: 500px;
+  width: 300px;
+  display: block;
+  overflow-y: scroll;
+  margin-bottom: 25px;
 }
-
 
 th {
-	
-	width: 800px;
+  width: 800px;
 }
 
-
 .add {
-	height: 35px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	/* font-size: 50px; */
-  font-family: 'Dancing Script', cursive;
-    border: 2px solid grey;
-    border-radius: 7px;
-    border-color: grey;
-    color: white;
-    background-image: url('https://c.tenor.com/WzXfobzzVDIAAAAC/sound-waves-cool-to-watch.gif');
-    background-size: cover;
-    text-decoration: none;
-    padding: 10px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+  font-family: "Dancing Script", cursive;
+  border: 2px solid grey;
+  border-radius: 7px;
+  border-color: grey;
+  color: white;
+  background-image: url("https://c.tenor.com/WzXfobzzVDIAAAAC/sound-waves-cool-to-watch.gif");
+  background-size: cover;
+  text-decoration: none;
+  padding: 10px;
 }
 
 #add {
-	height: 35px;
-	/* display: flex; */
-	align-items: center;
-	justify-content: center;
-	/* font-size: 50px; */
-  font-family: 'Dancing Script', cursive;
-    border: 2px solid grey;
-    border-radius: 7px;
-    border-color: grey;
-    color: white;
-    background-image: url('https://c.tenor.com/WzXfobzzVDIAAAAC/sound-waves-cool-to-watch.gif');
-    background-size: cover;
-    text-decoration: none;
-    padding: 6px;
-}
+  height: 35px;
 
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Dancing Script", cursive;
+  border: 2px solid grey;
+  border-radius: 7px;
+  border-color: grey;
+  color: white;
+  background-image: url("https://c.tenor.com/WzXfobzzVDIAAAAC/sound-waves-cool-to-watch.gif");
+  background-size: cover;
+  text-decoration: none;
+  padding: 6px;
+}
 
 .embed {
-	height: 500px;;
+  height: 500px;
 }
 
-
-
-
 .container {
-    background-color: #231E39;
-    border-radius: 25px;
-    box-shadow: 10px 10px 15px rgb(0 0 0 / 35%);
-    color: #B3B8CD;
-    padding: 30px 0 0;
-    /* position: relative; */
-    width: 777px;
-    max-width: 100%;
-    text-align: center;
-	
+  background-color: #231e39;
+  border-radius: 25px;
+  box-shadow: 10px 10px 15px rgb(0 0 0 / 35%);
+  color: #b3b8cd;
+  padding: 30px 0 0;
+
+  width: 777px;
+  max-width: 100%;
+  text-align: center;
 }
 
 .avatar {
-	border-radius: 50%;
+  border-radius: 50%;
 }
 
 .direction {
-	color: black;
+  color: black;
 }
