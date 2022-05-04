@@ -6,7 +6,7 @@
 
 body {
 	font-family: Montserrat, sans-serif;
-    background-image: url('https://wallpaperaccess.com/full/2086201.png');
+	background-image: url('https://wallpaperaccess.com/full/2086201.png');
 	background-position: center;
 	background-size: cover;
 	display: flex;
@@ -14,11 +14,10 @@ body {
 	flex-direction: column;
 	min-height: 100vh;
 	margin: 0;
-	
 }
 
 a {
-  color: #00B7FF;
+	color: #00B7FF;
 }
 
 .site {
@@ -30,88 +29,64 @@ a {
 }
 
 .nav {
-	/* background-image: linear-gradient(-45deg, #35C3F3 0%, #8b9fe8 20%, #e681d8 39%, #ffa9a4 76%, #FED2CE 100%); */
 	background-color: whitesmoke;
 	display: flex;
-
 	justify-content: flex-end;
 	align-items: center;
 	height: 35px;
 	width: 100%;
-	/* margin: auto; */
 }
 
-
 .login img {
-	width: 14px;;
+	width: 14px;
 	object-fit: contain;
-  }
-
+}
 
 .add {
 	height: 35px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	/* font-size: 50px; */
-  font-family: 'Dancing Script', cursive;
-    border: 2px solid grey;
-    border-radius: 7px;
-    border-color: grey;
-    color: white;
-    background-image: url('https://c.tenor.com/WzXfobzzVDIAAAAC/sound-waves-cool-to-watch.gif');
-    background-size: cover;
-    text-decoration: none;
-    padding: 10px;
+	font-family: 'Dancing Script', cursive;
+	border: 2px solid grey;
+	border-radius: 7px;
+	border-color: grey;
+	color: white;
+	background-image: url('https://c.tenor.com/WzXfobzzVDIAAAAC/sound-waves-cool-to-watch.gif');
+	background-size: cover;
+	text-decoration: none;
+	padding: 10px;
 }
+
 #add {
 	height: 35px;
-	/* display: flex; */
 	align-items: center;
 	justify-content: center;
-	/* font-size: 50px; */
-  font-family: 'Dancing Script', cursive;
-    border: 2px solid grey;
-    border-radius: 7px;
-    border-color: grey;
-    color: white;
-    background-image: url('https://c.tenor.com/WzXfobzzVDIAAAAC/sound-waves-cool-to-watch.gif');
-    background-size: cover;
-    text-decoration: none;
-    padding: 6px;
+	font-family: 'Dancing Script', cursive;
+	border: 2px solid grey;
+	border-radius: 7px;
+	border-color: grey;
+	color: white;
+	background-image: url('https://c.tenor.com/WzXfobzzVDIAAAAC/sound-waves-cool-to-watch.gif');
+	background-size: cover;
+	text-decoration: none;
+	padding: 6px;
 }
 
 
 .login img {
-  width: 14px;;
-  object-fit: contain;
+	width: 14px;
+	object-fit: contain;
 }
 
 .playlist-container {
-	background-color: #231E39;
-    border-radius: 25px;
-    box-shadow: 10px 10px 15px rgb(0 0 0 / 35%);
-    color: #B3B8CD;
-    padding: 30px 0 0;
-    /* position: relative; */
-    /* width: 75%; */
-    height: 500px;
-    /* max-width: 100%; */
-    width: 300px;
-    text-align: center;
-    margin: 20px 0;
-    /* overflow: hidden; */
-    /* margin-left: auto; */
-    /* margin-right: auto; */
-    display: grid;
-	/* display: flex; */
-    /* grid-template-columns: 50%; */
-    justify-content: center;
-
+	text-align: center;
+	margin: 20px 0;
+	justify-content: center;
 	table-layout: fixed;
 	background-color: #231E39;
 	border-radius: 25px;
-	box-shadow: 10px 10px 15px rgba(0,0,0,0.35);
+	box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.35);
 	color: #B3B8CD;
 	padding: 30px 0 0;
 	position: relative;
@@ -121,41 +96,32 @@ a {
 	display: block;
 	overflow-y: scroll;
 	margin-bottom: 25px;
-	
-
 }
 
 .tutorial {
-    height: 400px;
+	height: 400px;
 }
-
-
-
 
 .container {
 	background-color: #231E39;
-    border-radius: 25px;
-    box-shadow: 10px 10px 15px rgb(0 0 0 / 35%);
-    color: #B3B8CD;
-    padding: 30px 0 0;
-    /* position: relative; */
-    width: 777px;
-    max-width: 100%;
-    text-align: center;
+	border-radius: 25px;
+	box-shadow: 10px 10px 15px rgb(0 0 0 / 35%);
+	color: #B3B8CD;
+	padding: 30px 0 0;
+	width: 777px;
+	max-width: 100%;
+	text-align: center;
 }
 
 th {
-	
 	width: 800px;
-	
 }
-
 
 .review-table {
 	table-layout: fixed;
 	background-color: #231E39;
 	border-radius: 25px;
-	box-shadow: 10px 10px 15px rgba(0,0,0,0.35);
+	box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.35);
 	color: #B3B8CD;
 	padding: 30px 0 0;
 	position: relative;
@@ -172,18 +138,18 @@ th {
 	flex-direction: column;
 	align-items: center;
 }
+
 #date {
 	text-align: center;
-	
+
 }
 
 td {
 	text-align: center;
 }
+
 .avatar {
 	border-radius: 50%;
 	height: 75px;
 	width: 75px;
 }
-
-
