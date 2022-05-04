@@ -1,6 +1,6 @@
 <div align="center">
    <h1>:notes: U Feel Me? :notes:</h1>
-   <h3><a href="https://ufeelme.herokuapp.com/">Feel me here</a></h3>
+   <h3><a href="https://ufeelme.herokuapp.com/home">Feel me here</a></h3>
    <h5>Alexander Cairel</h5>                             
    <a href="[github page]" target="_blank">
       <img src="https://img.shields.io/badge/-Portfolio:_user.github.io-darkgreen?style=flat&logo=medium"/>
