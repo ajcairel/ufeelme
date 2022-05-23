@@ -2,18 +2,17 @@
    <h1>:notes: U Feel Me? :notes:</h1>
    <h3><a href="https://ufeelme.herokuapp.com/home">Feel me here</a></h3>
    <h5>Alexander Cairel</h5>                             
-   <a href="[github page]" target="_blank">
-      <img src="https://img.shields.io/badge/-Portfolio:_user.github.io-darkgreen?style=flat&logo=medium"/>
+   <h5>Alexander Cairel</h5>                             
+   <a href="https://github.com/ajcairel" target="_blank">
+      <img src="https://img.shields.io/badge/-GitHub:ajcairel-darkgreen?style=flat&logo=medium"/>
    </a>
    <a href="https://www.linkedin.com/in/alexandercairel/" target="_blank">
-      <img src="https://img.shields.io/badge/-linkedin.com/in/user-blue?style=flat&``logo=Linkedin&logoColor=white">
+      <img src="https://img.shields.io/badge/-linkedin.com/in/alexandercairel/-blue?style=flat&``logo=Linkedin&logoColor=white">
    </a> 
    <a href="mailto:alexanderjcairel@gmail.com" target="_blank">
-      <img src="https://img.shields.io/badge/-user@gmail.com-c14438?style=flat&logo=Gmail&``logoColor=white">
-   </a>
-<!--    <a href="https://medium.com/@user">
-      <img src="https://img.shields.io/badge/-medium.com/@user-black?style=flat&logo=medium">
-   </a> -->
+      <img src="https://img.shields.io/badge/-alexanderjcairel@gmail.com-c14438?style=flat&logo=Gmail&``logoColor=white">
+   </a>  
+
 </div>
 
 <h1>:pencil: Description</h1>
