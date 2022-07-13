@@ -19,11 +19,12 @@
 <p>This is a site that allows logged in users to post a playlist that will embed into the site from Spotify, Apple Music, and Soundcloud. They can also leave a review. Try it out! </p>
 
 <details>
-<summary> :art: Wireframes</summary>
+<summary> :art: ERD & Wireframe </summary>
 
 | Description | Screenshot |
 |------------ | ------------|
-| <h3 align="center">UI</h3> | <img src="https://i.imgur.com/7S5W6Lf.png" width="700"/> |
+| <h3 align="center">ERD</h3> | <img src="https://i.imgur.com/hn8gSFp.png" width="700"/> |
+| <h3 align="center">Wireframe</h3> | <img src="https://i.imgur.com/7S5W6Lf.png" width="700"/> |
 </details>
 
 <details>
