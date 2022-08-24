@@ -25,7 +25,8 @@ h1 {
 }
 
 .selection {
-  font-size: 80px;
+  font-size: 60px;
+  background-color: black;
 }
 .head {
   text-align: center;
